@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>The Rhema iPhone App &ndash; Designed by Sky Balloon</title>
+
+	<link rel="stylesheet" type="text/css" href="/fancybox/jquery.fancybox-1.3.1.css" media="screen" />
+ 	<link rel="stylesheet" href="style.css" />
+	<style type="text/css" media="screen">
+		@import url(/css/reset.css);
+		@import url(/css/text.css);
+		@import url(/css/960.css);
+		body {
+			color: #555;
+			background: #e2e0d6 url(/images/rhema/bodybg.png) repeat-x;
+		}
+		#header {
+			height: 410px;
+			background: url(/images/rhema/header.png) 30px 0 no-repeat;
+		}
+		#header * {
+			visibility: hidden;
+		}
+		#example {
+			height: 417px;
+			margin: -220px 0 30px;
+			background: url(/images/rhema/iphones.png) 255px 0 no-repeat;
+		}
+		#info {
+			padding: 15px 0;
+			background: url(/images/rhema/infobg.png) 50% 50% no-repeat;
+		}
+		hr {
+			height: 16px;
+			background: url(/images/rhema/hr.png) no-repeat;
+			border: 0 none;
+		}
+		hr.bottom {
+			background-position: 50% 100%;
+		}
+		#info h2 {
+			height: 15px;
+			text-indent: -999999px;
+			overflow: hidden;
+		}
+		p,
+		li {
+			text-shadow: 0 1px 0 #fff;
+		}
+		ul {
+			float: left;
+			width: 50%;
+			margin: 0 0 1.5em;
+		}
+		li {
+			margin: 0 0 0 1em;
+			list-style: square;
+			font-size: 11px;
+		}
+		#i1 h2 {
+			background: url(/images/rhema/h2rhema.png) no-repeat;
+		}
+		#i2 h2 {
+			background: url(/images/rhema/h2library.png) no-repeat;
+		}
+		#cards {
+			float: right;
+		}
+		#download {
+			margin: 0;
+		}
+		#download a {
+			display: block;
+			height: 54px;
+			text-indent: -999999px;
+			overflow: hidden;
+			background: url(/images/rhema/download.png) 50% 0 no-repeat;
+		}
+		#download a:hover {
+			background-position: 50% 100%;
+		}
+		#download + p {
+			text-align: center;
+			font-size: 10px;
+			color: #a9a699;
+			text-shadow: none;
+		}
+		#screenshots {
+			margin: 0 0 20px;
+		}
+		#screenshots a {
+			display: block;
+			float: left;
+			height: 60px;
+			width: 60px;
+			margin-right: 11px;
+			padding: 3px;
+			background: #a9a699;
+		}
+		#screenshots a:hover {
+			background: #555;
+		}
+		#screenshots #ss4 {
+			margin-right: 0;
+		}
+		#link_appstore {
+			float: left;
+			width: 150px;
+		}
+		#link_appstore a {
+			display: block;
+			height: 50px;
+			text-indent: -999999px;
+			overflow: hidden;
+			background: url(/images/rhema/appstore.png) 0 50% no-repeat;
+		}
+		#link_skyballoon {
+			float: right;
+			width: 150px;
+		}
+		#link_skyballoon a {
+			display: block;
+			height: 50px;
+			text-indent: -999999px;
+			overflow: hidden;
+			background: url(/images/rhema/skyballoon.png) 100% 50% no-repeat;
+		}
+		#dedication {
+			text-align: center;
+			font: normal italic 11px/1.3 georgia,serif;
+		}
+	</style>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+	<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#screenshots a[rel='ss_group']").fancybox({
+			});
+		});
+	</script>
+
+</head>
+<body>
+	
+<div class="container_12">
+	<div id="header">
+		<h1>Rhema</h1>
+		<h2>Personalized Bible verses for everyday life &mdash; in your pocket</h2>
+	</div>
+	<div id="example">&nbsp;</div>
+	<hr class="top" />
+	<div class="clearfix" id="info">
+		<div class="grid_4" id="i1">
+			<h2>Rhema whatnow?</h2>
+			<img src="/images/rhema/cards.png" width="110" height="106" id="cards" alt="" />
+			<p>Rhema is a Greek word that means "living voice of God". This app brings <em>Rhema Cards</em>, collections of categorized and paraphrased Bible verses (created by Dr. Wendell Smith), to the iPhone and iPod touch.</p>
+			<p>For years, Rhema Cards have been used worldwide for reference, encouragement and spiritual growth. Now the Rhema app makes them accessible to you in every situation, no matter where you are!</p>
+		</div>
+		<div class="grid_4" id="i2">
+			<h2>A library in your pocket</h2>
+			<p>Rhema is a quick, light weight app designed with speed and accessibility in mind. It contains paraphrased verses organized by relevant topics:</p>
+			<ul id="card_list1">
+				<li>Identity in Christ</li>
+				<li>Healing of Infirmities</li>
+				<li>Faith</li>
+				<li>No Fear</li>
+				<li>The Lord is My Strength</li>
+				<li>Wisdom and the Will of God</li>
+			</ul>
+			<ul id="card_list2">
+				<li>Passion for Purity</li>
+				<li>Joy is a Choice</li>
+				<li>Overcoming</li>
+				<li>Prosperity with a Purpose</li>
+				<li>Walking in Love</li>
+				<li>God Wants All Men to be Saved</li>
+			</ul>
+			<p>You can browse by topic, mark your favorite verses, and search the entire catalog for a word or phrase. If you want to share a verse with a friend, you can email it, or copy it in order to draft a text message or tweet.</p>
+		</div>
+		<div class="grid_4" id="i3">
+			<div class="clearfix" id="screenshots">
+				<a href="/images/rhema/ss-card.png" rel="ss_group" title="Card view" id="ss1"><img src="/images/rhema/ss-cardsm.png" alt="" /></a>
+				<a href="/images/rhema/ss-search.png" rel="ss_group" title="Search view" id="ss2"><img src="/images/rhema/ss-searchsm.png" alt="" /></a>
+				<a href="/images/rhema/ss-favorites.png" rel="ss_group" title="Favorites view" id="ss3"><img src="/images/rhema/ss-favoritessm.png" alt="" /></a>
+				<a href="/images/rhema/ss-action.png" rel="ss_group" title="Verse actions" id="ss4"><img src="/images/rhema/ss-actionsm.png" alt="" /></a>
+			</div>
+			<h3 id="download"><a href="http://itunes.apple.com/us/app/id354894402?mt=8">Download from the App Store</a></h3>
+			<p><small>Requires iPhone OS 3.0</small></p>
+			<p id="free"><strong>Rhema is a free app.</strong> We want to make it easy for everyone to have instant access to these wonderful resources.</p>
+			<p id="link_appstore"><a href="http://itunes.apple.com/us/app/id354894402?mt=8">Available on the App Store</a></p>
+			<p id="link_skyballoon"><a href="/">Designed by <strong>Sky Balloon</strong></a></p>
+		</div>
+	</div>
+	<hr class="bottom" />
+	<div class="grid_12" id="dedication">
+		<p>The Rhema app is dedicated to the original creator of Rhema Cards, Dr. Wendell E. Smith. He is a leader of leaders, a man of faith &amp; courage, and our pastor.</p>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-495547-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>

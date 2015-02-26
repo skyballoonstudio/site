@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Capture &mdash; The Quick Video Camera for iPhone</title>
+	<link rel="icon" type="image/png" href="http://skyballoonstudio.com/images/favicon.png">
+	<style type="text/css" media="screen">
+		@import url(/css/reset.css);
+		@import url(/css/text.css);
+		@import url(/css/960.css);
+		@import url(/css/video-js.css);
+		body {
+			color: #333;
+			font-family: 'Helvetica Neue', Helvetica, sans-serif;
+			background: #e2e0d6 url(/images/capture/bg-body.jpg);
+		}
+		#content h1,
+		#content h2 {
+			text-indent: -999em;
+			overflow: hidden;
+		}
+		#content h1 {
+			height: 144px;
+			margin: 100px 0 0;
+			background: url(/images/capture/logo.png) 50% 0 no-repeat;
+		}
+		#content h2 {
+			height: 38px;
+			margin: 30px 0;
+			background: url(/images/capture/slogan.png) 50% 0 no-repeat;
+		}
+		#download {
+			position: relative;
+			height: 48px;
+			margin: 0;
+			padding: 5px 4px;
+			overflow: hidden;
+			background: rgba(255,255,255,.75);
+			border-top: 1px solid #e0e0e0;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+		}
+		#download p:first-child {
+			float: left;
+			width: 139px;
+			height: 48px;
+			text-indent: -999em;
+			overflow: hidden;
+			background: url(/images/capture/appstore.png) 0 0 no-repeat;
+			-webkit-transition: opacity .5s ease-out;
+			-moz-transition: opacity .5s ease-out;
+		}
+		#download a {
+			display: block;
+			position: absolute;
+			top: 5px;
+			right: 4px;
+			width: 70px;
+			line-height: 48px;
+			color: #fff;
+			text-shadow: 0 -2px 0 #000;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			background: #606c88; /* Old browsers */
+			background: -moz-linear-gradient(top, #606c88 0%, #3f4c6b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#606c88), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* W3C */
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+		#download a strong {
+			display: block;
+			height: 0;
+			opacity: 0;
+			-webkit-transition: opacity .1s linear;
+			-moz-transition: opacity .1s linear;
+		}
+		#download a span {
+			display: block;
+			-webkit-transition: opacity .1 linear;
+			-webkit-transition: opacity .1 linear;
+		}
+		#download:hover p:first-child {
+			opacity: 0;
+		}
+		#download:hover a {
+			width: 210px;
+			-webkit-transform-origin: right;
+			text-shadow: 0 -2px 0 #398235;
+			background: #a6db95; /* Old browsers */
+			background: -moz-linear-gradient(top, #a6db95 0%, #8ab66b 44%, #398235 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6db95), color-stop(44%,#8ab66b), color-stop(100%,#398235)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #a6db95 0%,#8ab66b 44%,#398235 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #a6db95 0%,#8ab66b 44%,#398235 100%); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #a6db95 0%,#8ab66b 44%,#398235 100%); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6db95', endColorstr='#398235',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #a6db95 0%,#8ab66b 44%,#398235 100%); /* W3C */
+			
+		}
+		#download:hover a span {
+			height: 0;
+			opacity: 0;
+		}
+		#download:hover a strong {
+			height: auto;
+			opacity: 1;
+		}
+		#download:hover a:active {
+			background: #398235; /* Old browsers */
+			background: -moz-linear-gradient(top, #398235 0%, #8ab66b 48%, #c9de96 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#398235), color-stop(48%,#8ab66b), color-stop(100%,#c9de96)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #398235 0%,#8ab66b 48%,#c9de96 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #398235 0%,#8ab66b 48%,#c9de96 100%); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #398235 0%,#8ab66b 48%,#c9de96 100%); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#398235', endColorstr='#c9de96',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #398235 0%,#8ab66b 48%,#c9de96 100%); /* W3C */
+		}
+		#social {
+			margin: 30px 0;
+		}
+		#social .twitter-share-button {
+			float: left;
+			margin-left: 15px;
+		}
+		#iphone {
+			height: 771px;
+			background: url(/images/capture/iphone.png) 100% 0 no-repeat;
+		}
+		#click-me {
+			display: block;
+			position: absolute;
+			top: 200px;
+			left: 220px;
+			width: 60px;
+			height: 140px;
+		}
+		#click-me:hover {
+			cursor: pointer;
+		}
+		#video-frame {
+			display: none;
+			position: absolute;
+			margin: 70px 0 0 -300px;
+			padding: 20px;
+			background: rgba(0,0,0,.8);
+			border: 2px solid rgba(255,255,255,.5);
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			z-index: 2;
+		}
+		#intro,
+		video {
+			display: block;
+			width: 640px;
+			height: 360px;
+		}
+		#curtain {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.9);
+			z-index: 1;
+		}
+		/* Let's give desktop (Webkit) browsers the best experience */
+		@media only screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 0) {
+			#download {
+				z-index: 2;
+			}
+			#iphone {
+				overflow: hidden;
+				-webkit-perspective: 1000;
+				-webkit-perspective-origin: 50% 35%;
+				z-index: 2;
+			}
+			#video-frame {
+				position: relative;
+				margin: auto;
+				padding: 0;
+				background: none;
+				border: 0 none;
+				-webkit-border-radius: 0;
+			}
+			#intro {
+				display: block;
+				margin: 91px 0 0 25px;
+				-webkit-transform: rotateY(310deg) scaleX(.57);
+				-webkit-transform-origin: left;
+				-moz-transform: rotateY(310deg) scaleX(.57);
+				-moz-transform-origin: left;
+			}
+		}
+		#link_skyballoon {
+			clear: both;
+			width: 135px;
+			margin: 0 auto;
+		}
+		#link_skyballoon a {
+			display: block;
+			height: 50px;
+			text-indent: -999999px;
+			overflow: hidden;
+			background: url(/images/rhema/skyballoon.png) 50% 50% no-repeat;
+		}
+</style>
+</head>
+<body>
+
+<div class="container_16">
+	
+	<div class="grid_4 prefix_1" id="content">
+
+		<h1>Capture</h1>
+		<h2><em>A record button for your iPhone homescreen</em></h2>
+		<div id="download">
+			<p>Available on the App Store</p>
+			<p><a href="http://itunes.apple.com/app/id442879059?mt=8"><strong>Download</strong> <span>$1.99</span></a></p>
+		</div>
+		<div id="social">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-text="Just found a great app for my iPhone that helps me never miss a moment: " data-count="horizontal" data-via="sky_balloon" data-related="skyballoon">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			<div id="fb-root"></div>
+			<script src="http://connect.facebook.net/en_US/all.js#appId=213797641995469&amp;xfbml=1"></script>
+			<fb:like href="http://skyballoonstudio.com/capture" send="false" layout="button_count" width="80" show_faces="false" font=""></fb:like>
+	    </div>
+		<p id="link_skyballoon"><a href="/">Designed by <strong>Sky Balloon</strong></a></p>
+
+	</div>
+
+
+	<div class="grid_8 prefix_2" id="iphone">
+		<span id="click-me"></span>
+		<div id="video-frame">
+			<div class="video-js-box" id="intro">
+				<video id="the-video" class="video-js" width="640" height="360" poster="/images/capture/poster.jpg" controls preload>
+					<source src="/video/captureintro.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+					<source src="/video/captureintro.ogv" type='video/ogg; codecs="theora, vorbis"' />
+				</video>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<div id="curtain"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="/js/video.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		// var myPlayer = VideoJS.setup("the-video");
+		$("#click-me").click(function() {
+			$("#video-frame").fadeIn(500).ready(function() {
+				var myPlayer = VideoJS.setup("the-video");
+				myPlayer.play();
+				myPlayer.addVideoListener("ended", function(){ 
+					$("#curtain").fadeOut(500);
+					$("#video-frame").fadeOut(500);
+				});
+				$("#curtain").fadeIn(500);
+			});
+			$("#curtain").click(function() {
+				$("#video-frame").hide();
+				$("#curtain").hide();
+			});
+		});
+	});
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-495547-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>
