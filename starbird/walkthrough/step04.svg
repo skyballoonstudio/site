@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="414px" height="254px" viewBox="0 0 414 254" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>step02</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Walkthrough" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Step-4" sketch:type="MSArtboardGroup" transform="translate(0.000000, -256.000000)" fill="#FFFFFF">
+            <g id="step02" sketch:type="MSLayerGroup" transform="translate(-28.000000, 256.000000)">
+                <rect id="Rectangle-12" sketch:type="MSShapeGroup" x="190" y="44" width="90" height="165" rx="3"></rect>
+                <rect id="Rectangle-13" sketch:type="MSShapeGroup" x="285" y="44" width="90" height="165" rx="3"></rect>
+                <rect id="Rectangle-16" sketch:type="MSShapeGroup" x="380" y="44" width="90" height="165" rx="3"></rect>
+                <rect id="Rectangle-14" opacity="0.5" sketch:type="MSShapeGroup" x="95" y="44" width="90" height="165" rx="3"></rect>
+                <rect id="Rectangle-15" opacity="0.25" sketch:type="MSShapeGroup" x="0" y="44" width="90" height="165" rx="3"></rect>
+                <text id="←OLDER" sketch:type="MSTextLayer" font-family="Lucida Grande" font-size="12" font-weight="bold">
+                    <tspan x="95" y="226">←</tspan>
+                    <tspan x="107" y="226" font-family="Helvetica Neue">OLDER</tspan>
+                </text>
+                <text id="NEWER→" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="12" font-weight="bold" sketch:alignment="right">
+                    <tspan x="318.564" y="226">NEWER</tspan>
+                    <tspan x="363" y="226" font-family="Lucida Grande">→</tspan>
+                </text>
+                <path d="M297,73 L297.633169,73 C297.835764,73 298,72.8357439 298,72.6204678 L298,54.3795322 C298,54.1699224 297.829481,54 297.633169,54 L297,54 L297,18.7545669 C297,8.3967056 288.606205,0 278.252046,0 L192.747954,0 C182.393745,0 174,8.39674818 174,18.7545669 L174,32 L173.366831,32 C173.164236,32 173,32.1735687 173,32.3798008 L173,41.6201992 C173,41.8299574 173.170519,42 173.366831,42 L174,42 L174,54 L173.366831,54 C173.164236,54 173,54.1642561 173,54.3795322 L173,72.6204678 C173,72.8300776 173.170519,73 173.366831,73 L174,73 L174,77 L173.366831,77 C173.164236,77 173,77.1642561 173,77.3795322 L173,95.6204678 C173,95.8300776 173.170519,96 173.366831,96 L174,96 L174,235.245433 C174,245.603294 182.393795,254 192.747954,254 L278.252046,254 C288.606255,254 297,245.603252 297,235.245433 L297,73 L297,73 Z M181,31 L181,223 L289,223 L289,31 L181,31 Z M236,246 C240.746705,246 245,241.746705 245,237 C245,231.253295 240.746705,227 236,227 C230.253295,227 226,231.253295 226,237 C226,241.746705 230.253295,246 236,246 Z M236,245 C240.19442,245 244,241.19442 244,237 C244,231.80558 240.19442,228 236,228 C230.80558,228 227,231.80558 227,237 C227,241.19442 230.80558,245 236,245 Z M216,18 C217.104569,18 218,17.1045695 218,16 C218,14.8954305 217.104569,14 216,14 C214.895431,14 214,14.8954305 214,16 C214,17.1045695 214.895431,18 216,18 Z M236,10 C236.328427,10 237,9.32842712 237,9 C237,7.67157288 236.328427,7 236,7 C234.671573,7 234,7.67157288 234,9 C234,9.32842712 234.671573,10 236,10 Z M226.991803,15 C226.444045,15 226,15.4438648 226,16 C226,16.5522847 226.455306,17 226.991803,17 L245.008197,17 C245.555955,17 246,16.5561352 246,16 C246,15.4477153 245.544694,15 245.008197,15 L226.991803,15 Z" id="Apple-iPhone-6" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
